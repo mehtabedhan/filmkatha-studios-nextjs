@@ -67,7 +67,6 @@ const Films = () => {
 
                         </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10">
-4
           {filmsByCategory.map((item)=>{
                   return(
                     <div  key={item.id} className="container p-3 bg-bg-secondary shadow-lg shadow-gray-900 hover:cursor-pointer hover:bg-bg-primary">
