@@ -5,10 +5,10 @@ export const images={
     'companyLogo2':'https://firebasestorage.googleapis.com/v0/b/video-streaming-platform-1bd2e.appspot.com/o/images%2Ffilmkatha_black_logo.png?alt=media&token=4ba96d3e-ce75-4993-8547-585bdecceb26',
 
   }
-export const companyName='FILMKATHA'
+export const companyName='Filmkatha Studios'
 
 
-export const whatsappNo='+916264871687'
+export const whatsappNo='+919981866200'
 
 export const aboutUs='Filmkatha Studios is a film production company, which is working in making advertisement films, short films and documentary films etc.  since last three years and is working on many projects in future, in Gwalior region.  FilmKatha Studios to increase the awareness of cinema that they will further work on new ideas.'
 export const ourStory=''
@@ -31,6 +31,9 @@ export const socials=[
     {
         'name':'Facebook','url':'https://www.facebook.com/filmkathastudios'
     },
+    {
+      'name':'Linkedin','url':'https://www.linkedin.com/in/filmkatha-studios-a55b291ab/'
+    }
   
 ]
 

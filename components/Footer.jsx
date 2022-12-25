@@ -34,17 +34,17 @@ const Footer = () => {
                     <div>
                         <h2 className="mb-4 text-sm font-semibold text-bg-primary uppercase flex items-center justify-center">Follow us</h2>
                         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                    <Link href="https://www.instagram.com/jungle__tales" target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
+                    <Link href={socials[0].url} target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
                     <FaInstagram/>
                     </Link>
-                    <Link href="https://www.youtube.com/jungle__tales" target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
+                    <Link href={socials[1].url} target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
                         <FaYoutube/>
                     </Link>
 
-                    <Link href="https://www.facebook.com/jungle__tales" target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
+                    <Link href={socials[2].url} target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
                         <FaFacebook/>
                     </Link>
-                    <Link href="https://www.linkedin.com/jungle__tales" target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
+                    <Link href={socials[3].url  } target='_blank' rel='noopener' className="text-bg-secondary hover:text-bg-primary">
                         <FaLinkedin/>
                     </Link>
                    

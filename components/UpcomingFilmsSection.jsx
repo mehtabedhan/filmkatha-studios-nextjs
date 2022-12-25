@@ -35,8 +35,8 @@ function toDateTime(date) {
 
   return (
     <section className="">
-        <div className="">
-            <h2 className="mb-8 text-xl text-center text-text-secondary lg:mb-16 md:text-2xl lg:text-3xl">
+        <div className="mt-16">
+        <h2 className="mb-4 text-xl ml-20 text-text-secondary font-semibold lg:mb-8 md:text-xl lg:text-2xl">
               Upcoming films...
                 </h2>
           <div className='grid grid-cols-4 gap-3 p-4'>
@@ -49,8 +49,8 @@ function toDateTime(date) {
                <Link href={'/film/'+item.id}>
                 <div>
                   <div className='flex justify-center items-center'>
-                   <Image width='300' height='300' src={item.posterURL}
-               className='rounded-md' alt=""/>
+                   <Image width='200' height='250' src={item.posterURL}
+               className='rounded-md  border-4 border-text-primary ' alt=""/>
                   </div>
 
                   <div className='pt-4'>
