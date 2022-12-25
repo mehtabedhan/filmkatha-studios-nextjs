@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { aboutUsText, images, ourStoryText } from '../../data'
+import { aboutUs, aboutUsText, images, ourStoryText } from '../../data'
 import { getCollectionData } from '../../utils/apiFunctions'
 
 const About = () => {
@@ -20,7 +20,7 @@ const About = () => {
         <div className="w-full lg:w-3/4 flex flex-col justify-center">
             <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-text-secondary pb-4">About Us</h1>
             <p className="font-normal text-base leading-6 text-text-primary">
-                {aboutUsText}
+                {aboutUs}
             </p>
         </div>
         <div className="">
@@ -30,10 +30,8 @@ const About = () => {
 
     <div className="flex lg:flex-row flex-col justify-between gap-8 pt-12">
         <div className="w-full lg:w-5/12 flex flex-col justify-center">
-            <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-text-secondary pb-4">Our Story</h1>
-            <p className="font-normal text-base leading-6 text-text-primary">
-                {ourStoryText}
-            </p>
+            <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-text-secondary pb-4">Our Team</h1>
+           
         </div>
         <div className="w-full lg:w-8/12 lg:pt-8">
             <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md">
@@ -44,7 +42,9 @@ const About = () => {
                         return(
                         <div key={item.id} className="p-4 pb-6 flex justify-center flex-col items-center">
                              <Image width='200' height='200' className='rounded-lg shadow-md shadow-gray-800' src={item.profileImageURL} alt={item.name+" featured Image"} />
-                            <p className="font-medium text-lg lg:text-xl leading-5 text-text-primary mt-4">{item.name}</p>
+                            <p className="font-semibold text-lg lg:text-xl leading-5 text-text-primary mt-4">{item.name}</p>
+                            <p className="font-medium text-lg lg:text-xl leading-5 text-text-primary mt-4">{item.role}</p>
+ 
                         </div>
                        
                         )

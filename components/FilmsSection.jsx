@@ -36,10 +36,10 @@ function toDateTime(date) {
   return (
     <section className="">
         <div className="mt-5">
-            <h2 className="mb-4 text-xl ml-20 text-text-secondary font-semibold lg:mb-8 md:text-xl lg:text-2xl">
+        <h2 className="mb-4 text-xl ml-8 lg:ml-20 text-text-secondary font-semibold lg:mb-8 md:text-xl lg:text-2xl">
               Latest films...
                 </h2>
-          <div className='grid grid-cols-4 gap-3 p-4'>
+          <div className='grid grid-cols-2 lg:grid-cols-4 gap-3 p-4'>
           {films.length!=0?(
                films.map((item)=>{
 
@@ -54,7 +54,7 @@ function toDateTime(date) {
                   </div>
 
                   <div className='pt-4'>
-                  <p className="mb-2 flex justify-center font-bold text-text-primary lg:mb-4 text-md lg:text-xl">
+                  <p className="mb-2 flex justify-center font-medium text-sm text-text-primary lg:mb-4 text-md md:text-xs lg:text-xl">
                    {item.title}</p>
                   
                    <p className="mb-2 flex justify-center font-light text-text-primary lg:mb-4 text-sm lg:text-lg">
