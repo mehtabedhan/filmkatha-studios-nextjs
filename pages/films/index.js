@@ -13,6 +13,8 @@ const Films = () => {
         
       getCollectionData('films').then((val)=>{
         setFilms(val)
+        console.log(val)
+
         setFilmsByCategory(val)
 
       })

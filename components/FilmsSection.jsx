@@ -35,7 +35,7 @@ function toDateTime(date) {
 
   return (
     <section className="">
-        <div className="mt-8">
+        <div className="mt-5">
             <h2 className="mb-4 text-xl ml-20 text-text-secondary font-semibold lg:mb-8 md:text-xl lg:text-2xl">
               Latest films...
                 </h2>

@@ -6,15 +6,14 @@ import {getStorage} from 'firebase/storage'
 // var env   = process.env;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAhCcMu29tXgXE_7NwMWLiQ-w3fH7lNJk8",
-  authDomain: "video-streaming-platform-1bd2e.firebaseapp.com",
-  projectId: "video-streaming-platform-1bd2e",
-  storageBucket: "video-streaming-platform-1bd2e.appspot.com",
-  messagingSenderId: "591678230118",
-  appId: "1:591678230118:web:d3ae97e667f01b09bf27a7",
-  measurementId: "G-2JGGC54GKJ"
+  apiKey: "AIzaSyDkBsGEOR61FY6lHWkholCFXKu-WcLDIBc",
+  authDomain: "filmkatha-studios.firebaseapp.com",
+  projectId: "filmkatha-studios",
+  storageBucket: "filmkatha-studios.appspot.com",
+  messagingSenderId: "697458521124",
+  appId: "1:697458521124:web:81ca0f35950d9c258f14b1",
+  measurementId: "G-3XMGDS6X66"
 };
-
 
   const app=getApps.length>0?getApp():initializeApp(firebaseConfig);
 
