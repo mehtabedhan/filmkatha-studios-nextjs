@@ -27,7 +27,6 @@ const [fields,setFields]=useState(false)
     
     try {
 
-        console.log('ss')
 
       if(name===''||name===''||email===''||subject===''||message===''){
         setFields(true)
@@ -134,12 +133,12 @@ const [fields,setFields]=useState(false)
 
 
           <div className='flex items-center w-full'>
-          <button type='button'
+          {/* <button type='button'
           onClick={()=>sendMessage()}
            className='ml-0 md:ml-auto w-full md:w-auto border-none outline-none bg-emerald-500 px-12 py-2 rounded-lg text-lg text-white font-semibold'
            >
              Send Mail
-           </button>
+           </button> */}
 
            <Link
             href={`https://wa.me/${whatsappNo}?text=Hello I am ${name}, subject of my query is - ${subject},and my query is - ${message}`.replaceAll(' ','%20')}
