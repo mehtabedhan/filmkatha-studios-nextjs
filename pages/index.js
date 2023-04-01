@@ -1,7 +1,8 @@
 import { FilmCategoriesSection, FilmsSection, UpcomingFilmsSection } from '../components';
 import Footer from '../components/Footer';
-import VideoPlayer from '../components/VideoPlayer';
 import { aboutUs } from '../data';
+import Head from 'next/head';
+
 
 export default function Home() {
   return (
