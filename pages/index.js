@@ -22,7 +22,7 @@ export default function Home() {
 
         <link
           rel="canonical"
-          href={domainUrl}
+          href={'https://www.filmkatha.com'}
           key="canonical"
         />
     </Head>
