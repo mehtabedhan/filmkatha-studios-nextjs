@@ -9,7 +9,7 @@ export default function Home() {
     <div className="">
        <Head>
         <title>Filmkatha Studios</title>
-        <meta charset="UTF-8"/>
+        <meta charSet="UTF-8"/>
 
         <meta
           name="description"

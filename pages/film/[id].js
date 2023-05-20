@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { Loader, filmsByCategorySection } from '../../components';
 import VideoPlayer from '../../components/VideoPlayer';
 import { getCollectionData, getDataById } from '../../utils/apiFunctions';
+import Head from 'next/head';
 
 const FilmDetails = ({film}) => {
   const router=useRouter();
@@ -33,6 +34,26 @@ const FilmDetails = ({film}) => {
   
   return (
 <div>
+<Head>
+        <title>{film.title}</title>
+        <meta charSet="UTF-8"/>
+
+        <meta
+          name="description"
+          content={film.title}
+          key="desc"
+        />
+        <meta name="keywords"
+         content={'filmkatha,filmkatha studios'}
+         />
+
+        <link
+          rel="canonical"
+          href={'https://www.filmkatha.com/film/'+film.id}
+          key="canonical"
+        />
+    </Head>
+
 <div className="grid grid-cols-1 lg:grid-cols-2 mx-4 my-8 md:mx-8 lg:mx-16 lg:my-16">
 
             {isReleased?(
@@ -62,15 +83,19 @@ const FilmDetails = ({film}) => {
         <p className="font-bold flex justify-center text-text-primary lg:mb-4 text-md lg:text-xl">
           {'a '+film.category}</p>
 
+
        <div className='border-2 px-7 mt-10 py-10 border-text-secondary'>
+      
        {
-                            Object.keys(film.credits).map((val)=>{
+        
+            Object.keys(film.credits).map((val)=>{
                               return(
                                 <div key={val} className='flex justify-center'>
                                 <p className="mb-2 mr-2 flex justify-center font-light text-text-primary lg:mb-4 text-sm lg:text-lg">
-                                {val+" : "}</p> 
-                                <p className="mb-2 flex justify-center font-medium text-text-primary lg:mb-4 text-md lg:text-xl">
+                                {val+" : "}</p>
+         <p className="mb-2 flex justify-center font-medium text-text-primary lg:mb-4 text-md lg:text-xl">
                                 {film.credits[val]}</p> 
+                                \n
                             </div>
                               )
                             })
