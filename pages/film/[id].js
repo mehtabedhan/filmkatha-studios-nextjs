@@ -68,7 +68,7 @@ const FilmDetails = ({film}) => {
                               return(
                                 <div key={val} className='flex justify-center'>
                                 <p className="mb-2 mr-2 flex justify-center font-light text-text-primary lg:mb-4 text-sm lg:text-lg">
-                                {val+" :"}</p> 
+                                {val+" : "}</p> 
                                 <p className="mb-2 flex justify-center font-medium text-text-primary lg:mb-4 text-md lg:text-xl">
                                 {film.credits[val]}</p> 
                             </div>
