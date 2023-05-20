@@ -17,6 +17,11 @@ const FilmDetails = ({film}) => {
     }
     
   }, [])
+
+  function removeKey(mp,k){
+    delete mp[k]
+    return mp
+  }
   
 
   if(router.isFallback){
@@ -40,7 +45,7 @@ const FilmDetails = ({film}) => {
 
         <meta
           name="description"
-          content={film.title}
+          content={film.description}
           key="desc"
         />
         <meta name="keywords"
@@ -81,21 +86,20 @@ const FilmDetails = ({film}) => {
           {`${toDateTime(film.releaseDateTimestamp)}`}</p>):(<></>)}
 
         <p className="font-bold flex justify-center text-text-primary lg:mb-4 text-md lg:text-xl">
-          {'a '+film.category}</p>
+          {'a '+film.category.toUpperCase().replaceAll('-',' ')}</p>
 
 
        <div className='border-2 px-7 mt-10 py-10 border-text-secondary'>
-      
+   
        {
         
-            Object.keys(film.credits).map((val)=>{
+          Object.keys(film.credits).map((val)=>{
                               return(
                                 <div key={val} className='flex justify-center'>
                                 <p className="mb-2 mr-2 flex justify-center font-light text-text-primary lg:mb-4 text-sm lg:text-lg">
                                 {val+" : "}</p>
          <p className="mb-2 flex justify-center font-medium text-text-primary lg:mb-4 text-md lg:text-xl">
                                 {film.credits[val]}</p> 
-                                \n
                             </div>
                               )
                             })
