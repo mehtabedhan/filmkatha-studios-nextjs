@@ -7,7 +7,7 @@ import { AppWrapper } from '../context/AppContext'
 function MyApp({ Component, pageProps }) {
   return (
     <div className='bg-bg-primary'>
-            <AppWrapper>
+  <AppWrapper>
 
     <Layout>
 
