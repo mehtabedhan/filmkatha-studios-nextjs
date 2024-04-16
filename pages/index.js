@@ -27,8 +27,9 @@ export default function Home() {
         />
     </Head>
 
-      <UpcomingFilmsSection/>
       <FilmsSection/>
+      <UpcomingFilmsSection/>
+
       <FilmCategoriesSection/>
    
 
