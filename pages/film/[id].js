@@ -61,26 +61,7 @@ const FilmDetails = ({film}) => {
 
 <div className="grid grid-cols-1 lg:grid-cols-2 mx-4 my-8 md:mx-8 lg:mx-16 lg:my-16">
 
-            {isReleased?(
-              <div>
-              {film.filmURLType==='youtube'?(<div key={film.id} className="aspect-w-16 aspect-h-9 ">
-                    <iframe src={"https://www.youtube.com/embed/"+film.filmURL.split('=')[1]} allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                  </div>
-                  ):(<VideoPlayer link={film.filmURL}/>)}
-
-                        
-       <div key={film.description} className='flex mt-4 items-center px-2 justify-center'>
-       <p className="mb-6 font-medium text-text-primary lg:mb-8 md:text-sm lg:text-lg lg:flex hidden">
-     {film.description}
-     </p>
-     </div>
-   
-
-                  
-              </div>
-            
-                  
-                  ):(<div>
+           <div>
                     <div className='my-10 mx-10 items-center justify-center flex'>
                 <Image width='400' height='400' src={film.posterURL} className='rounded-lg shadow-lg shadow-black' alt="img"/>
                 
@@ -96,7 +77,7 @@ const FilmDetails = ({film}) => {
    
 
            
-                </div>)}
+                </div>
                 
 
 
